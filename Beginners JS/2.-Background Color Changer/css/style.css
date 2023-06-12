@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#app{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.change-color{
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.change-color:hover{
+    background: radial-gradient(circle,rgba(252,70,107,1) 0%,rgba(63,94,251,1) 100%);
+}
