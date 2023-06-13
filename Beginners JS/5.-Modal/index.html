@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal - JavaScript</title>
+    <!-- Styles sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Start App -->
+    <div id="app">
+        <div class="modal-container">
+            <div class="notification">
+                <img src="./images/bell.svg" alt="Bell Icon" class="main-icon">
+            </div>
+            <div id="card-container" class="hidden">
+                <div class="card-notification">
+                    <div class="top-notification">
+                        <h2>Notifications</h2>
+                        <span>Mark all as read</span>
+                    </div>
+                    <div class="header-notification">
+                        <div class="tabs">
+                            <button class="btn btn-active">All <span>4</span></button>
+                            <button class="btn">Following <span>6</span></button>
+                            <button class="btn">Archive</button>
+                        </div>
+                        <div class="cog-icon">
+                            <img src="./images/cog.svg" alt="Cog Icon" class="cop-icon">
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <main class="results-notification">
+                        <!-- Content Here from JavaScript -->
+                    </main>
+                    <!-- Close button -->
+                    <button class="close-button">x</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End App -->
+
+    <!-- Scripts -->
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
