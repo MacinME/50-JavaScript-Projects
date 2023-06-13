@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e7f2ff;
+}
+
+#app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.quotes-container{
+    width: auto;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.quote-box{
+    text-align: right;
+}
+
+.quote-text{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #1d1d1d;
+    font-style: italic;
+}
+
+.quote-author{
+    background-color: #000000;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+}
+
+#btn-generator{
+    background-color: #7627ff;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#btn-generator:hover{
+    background-color: #fff;
+    color: #7627ff;
+}
+
+/* Media Queries */
+@media screen and (min-width: 800px) {
+    .quotes-container{
+        width: 400px;
+        height: 200px;
+    }
+}
