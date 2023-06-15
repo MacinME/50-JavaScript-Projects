@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator - JavaScript</title>
+    <!-- Styles sheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Start App -->
+    <div id="app">
+        <div class="bmi-calculator">
+            <div class="bmi-calculating">
+                <div class="bmi bmi-age">
+                    <h3 class="title">Age</h3>
+                    <input type="text" min="0" value="20" class="display-value" id="age" disabled>
+                    <div>
+                        <button id="decreaseAge">-</button>
+                        <button id="increaseAge">+</button>
+                    </div>
+                </div>
+                <div class="bmi bmi-weight">
+                    <h3 class="title">Weight</h3>
+                    <input type="text" min="0" value="180" class="display-value" id="weight" >
+                    <div>
+                        <button id="decreaseWeight">-</button>
+                        <button id="increaseWeight">+</button>
+                    </div>
+                </div>
+                <div class="bmi bmi-height">
+                    <input type="range" min="0" value="178" max="500" id="myRange">
+                    <div>
+                        <h3 class="title">Height</h3>
+                        <span class="subtitle">cm</span>
+                        <input class="range-value" value="178" disabled></input>
+                    </div>
+                </div>
+                <div class="bmi-calculate">
+                    <button class="btn-calculate">Calculate</button>
+                </div>
+            </div>
+            <div class="bmi-result">
+                <h1 class="bmi-title">BMI Calculator</h1>
+
+                <div class="results">
+                    <p class="bmi-result_value">18.0</p>
+                    <span class="bmi-clasification">Normal</span>
+    
+                    <div class="bmi-details">
+                        <p class="bmi-range">Normal BMI Range: 18.5 kg/m2 - 25 kg/m2</p>
+                        <p class="bmi-pi">Ponderal Index: 10.64 kg/m3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End App -->
+
+    <!-- Scripts -->
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
