@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#app{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f1ed;
+}   
+
+.app-title{
+    color: #313131;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.app-subtitle{
+    color: #de4848;
+}
+
+.timer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-title{
+    color: #343434;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.timer .countdown {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.timer .countdown > .time > div{
+    width: 170px;
+    font-size: 90px;
+    border: none;
+    background-color: #f7f7f7;
+    padding: 15px 10px;
+    color: #de4848;
+    font-weight: 700;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 1px -1px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.expired{
+    font-size: 40px;
+    font-weight: 700;
+    color: #2c2c2c;
+    text-align: center;
+}
