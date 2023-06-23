@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator - JavaScript</title>
+    <!-- Styles sheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <div id="app">
+        <h1 class="app-title">Tip Calculator</h1>
+        <form>
+            <div class="tip-calculator">
+                <div class="field">
+                    <label for="billAmount">Bill Amount:</label>
+                    <input type="text" id="billAmount">
+                </div>
+                <div class="field">
+                    <label for="tip">Tip %:</label>
+                    <input type="text" id="tip" value="0">
+    
+                    <button type="button" class="decrease d-tip">-</button>
+                    <button type="button" class="increase i-tip">+</button>
+                </div>
+                <div class="field">
+                    <label for="split">Split the Bill:</label>
+                    <input type="text" id="bill" value="0">
+    
+                    <button type="button" class="decrease d-bill">-</button>
+                    <button type="button" class="increase i-bill">+</button>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" id="clear">Clear</button>
+                    <button id="calculate">Calculate</button>
+                </div>
+
+                <code id="results" class="hidden"></code>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
